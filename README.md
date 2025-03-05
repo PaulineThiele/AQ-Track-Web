@@ -18,8 +18,13 @@ The topic is: "Entwicklung eines Prototyps einer Messgeräteerweiterung zur Erfa
 
 ## Starting the web application
 1. You must have Python on your computer. 
-2. Navigate to the downloaded folder in the command prompt and start a local server with: ```python -m http.server 8000```
-3. Open a new window in your browser and type: http://localhost:8000/website/DEMO.html 
+2. Download the code using the buttons "Code" and "Download ZIP".
+3. Unzip the folder and make sure that the folder structure looks like this:  
+```Downloads\AQ-Track-Web-main\website```  
+Avoid extracting it in a way that results in nested folders, such as:  
+```Downloads\AQ-Track-Web-main\AQ-Track-Web-main\website```  
+4. Navigate to the downloaded folder (e.g. ```user\Downloads\AQ-Track-Web-main```) in the command prompt and start a local server with: ```python -m http.server 8000```
+5. Open a new window in your browser and type: http://localhost:8000/website/DEMO.html 
 
 ### Information for the web application 
 The data from the point located at the Schillerallee 1 are based on air quality measurements of the sensors (SDS011, HM3301, Grove - Mehrkanal-Gassensor V2).  
