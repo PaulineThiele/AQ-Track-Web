@@ -1,3 +1,4 @@
+/*General Popup*/
 body {margin:0px}
 
 .popup{  width: 350px;}
@@ -90,7 +91,7 @@ label {
 }
 
 #indentlastupdate {
-  position: absolute; /*TODO: blöd, lieber mit flex arbeiten*/
+  position: absolute; 
   right: 0;
   top: 47px;
   margin-right: 15px;
@@ -162,10 +163,6 @@ label {
   cursor: pointer;
 }
 
-
-
-
-/*TODO: Wo kommt denn das am Besten hin?*/
 .dialogContent {
 
   border-collapse: collapse;
@@ -195,11 +192,6 @@ label {
 #textcolor {
   margin: 0px;
 }
-
-
-
-
-
 
 
 
@@ -255,11 +247,8 @@ label {
 
 
 
-
-
 /*sidebar*/
 .sidebar {
-  /*height: 100%;*/
   width: 0px;
   position: fixed;
   z-index: 1; 
@@ -316,11 +305,9 @@ label {
 }
 
 .sidebar .hr_sb {
-  /*width: 90%; */
   position: relative;
   margin-left: 40px;
   margin-right: 40px;
-  /*left: 5px;*/
 }
 
 /* air quality index circle in the sidebar*/
@@ -337,7 +324,6 @@ label {
 
 
 
-
 /*chart*/
 .chart {
   max-width: 110%;
@@ -345,7 +331,6 @@ label {
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 120px;
-  /*align-items: flex-start;*/
 }
 
 #chartTimePeriod {
@@ -378,13 +363,12 @@ label {
   visibility: hidden;
   width: 80%; 
   height: 20px;
-  /*position: absolute; */
   padding-top: 7px; 
   padding-left: 7px;
 }
 
 #error_chart {
-  padding-bottom: 0px; /*-40*/
+  padding-bottom: 0px;
   margin-left: 60px;
 }
 
@@ -397,7 +381,6 @@ label {
 #error_time_1h {
   visibility: hidden;
   margin-top: -32px;
-  /*margin-bottom: 30px;*/
 }
 
 .chart label, .chart input {
@@ -422,7 +405,7 @@ label {
   margin-left: 5px;
   border: 2px solid;
   vertical-align: middle;
-  border-radius: 3px;  /* optional: leicht abgerundete Ecken */
+  border-radius: 3px;
 }
 
 h5 {
@@ -453,7 +436,6 @@ h5 {
 }
 
 #PNGDownload {
-  /*margin-left: 27%;*/
   margin-right: 30px;
 }
 
@@ -472,7 +454,6 @@ h5 {
 #error_download {
   margin-top: 0px;
 }
-
 
 
 
@@ -505,19 +486,12 @@ h5 {
 }
 
 #searchInput {
-  /*position: absolute;
-  width: 20%;
-  height: 7px;
-  top: 20px;*/
   width:90%; 
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px; 
-  /*margin-left: 40%;*/
   border: 1px solid black;
   border-radius: 15px;
   text-align: left;
-  /*z-index: 1000;
-  display: block;*/
   font-size: 15px;
 }
 
@@ -546,36 +520,4 @@ h5 {
 
 #searchResults li.selected {
   background: rgb(202, 202, 202)
-}
-
-
-
-
-
-.popup_values {
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  height: 70px;
-  width: 170px;
-  transform: translate(-50%, 0);
-  background-color: rgb(224, 224, 224);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  z-index: 1;
-}
-
-.popup_values.show {
-  visibility: visible;
-} 
-
-.category_help {
-  margin-left: 5px; 
-  padding: 5px; 
-  border-radius: 5px;
-  border: 1px solid #818181;
-  background-color: #c2d9e6;
 }
